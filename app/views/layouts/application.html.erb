@@ -10,7 +10,37 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="d-flex flex-column">
+    <%= render 'layouts/navigation' %>
+
+  <%
+=begin%>
+ <div class="container">
+    <div class="card" style="width: 18rem;display: inline-block;">
+      <div class="card-body">
+        <h5 class="card-title">first blog</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;display: inline-block;">
+      <div class="card-body">
+        <h5 class="card-title">second blog</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;display: inline-block;">
+      <div class="card-body">
+        <h5 class="card-title">third blog</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+  </div> 
+<%
+=end%>
+
     <%= render 'layouts/messages' %>
     <%= yield %>
   </body>
